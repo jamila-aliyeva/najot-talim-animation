@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #021823;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#animation_container {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  /* overflow: hidden;  */
+}
+#animation_container img {
+  margin-top: -65px;
+  height: 500px;
+  width: 500px;
+  animation: logo_img 4s linear;
+}
+
+span {
+  font-size: 100px;
+  margin-top: -100px;
+  animation: spans 0.5s linear forwards;
+  height: min-content;
+  /* animation-delay: ; */
+}
+span:nth-child(12) {
+  animation-delay: 2s;
+}
+span:nth-child(11) {
+  animation-delay: 2.1s;
+}
+span:nth-child(10) {
+  animation-delay: 2.2s;
+}
+span:nth-child(9) {
+  animation-delay: 2.3s;
+}
+span:nth-child(8) {
+  animation-delay: 2.4s;
+}
+span:nth-child(7) {
+  animation-delay: 2.5s;
+}
+span:nth-child(5) {
+  animation-delay: 2.4s;
+}
+span:nth-child(4) {
+  animation-delay: 2.3s;
+}
+span:nth-child(3) {
+  animation-delay: 2.2s;
+}
+span:nth-child(2) {
+  animation-delay: 2.1s;
+}
+span:first-child {
+  animation-delay: 2s;
+}
+
+@keyframes logo_img {
+  0% {
+    margin-top: -300px;
+  }
+  25% {
+    margin-top: 90px;
+    width: 600px;
+    height: 600px;
+  }
+  50% {
+    margin-top: 110px;
+    width: 400px;
+    height: 400px;
+  }
+  75% {
+    margin-top: 0px;
+    width: 500px;
+    height: 500px;
+  }
+  100% {
+    margin-top: 0px;
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@keyframes spans {
+  0% {
+    margin-top: -300px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
